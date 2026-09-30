@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Book Haven Bookstore</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo-wordmark.svg" alt="Book Haven Bookstore logo">
+      <span class="page-title">About Us</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>About Book Haven Bookstore</h1>
+    <p>Book Haven Bookstore is a local treasure for book enthusiasts, offering books, magazines, journals, and office supplies. We foster literary exploration and a love of reading, and this site is meant to make it easier to inquire, order custom titles, and visit in person.</p>
+    <div class="hours">
+      <h2>Hours of operation</h2>
+      <p>Monday–Friday: 9 a.m. to 8 p.m.<br>Saturday: 10 a.m. to 6 p.m.<br>Sunday: 11 a.m. to 5 p.m.</p>
+      <p>Call us at <a href="tel:+15550100">(555) 0100</a> or stop by the shop.</p>
+    </div>
+    <h2>Contact us &amp; custom orders</h2>
+    <p>Use this form for feedback or to request a special order. Your message is stored locally in your browser so you can confirm it was captured.</p>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="name" type="text" autocomplete="name" required>
+        <p class="error">Please enter your name (at least 2 characters).</p>
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Email</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+        <p class="error">Please enter a valid email address.</p>
+      </div>
+      <div class="form-group">
+        <label for="inquiry-type">Inquiry type</label>
+        <select id="inquiry-type" name="type" required>
+          <option value="">Select one</option>
+          <option value="feedback">Feedback</option>
+          <option value="custom">Custom / special order</option>
+          <option value="hours">Hours or visit question</option>
+        </select>
+        <p class="error">Please choose an inquiry type.</p>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <p class="error">Please enter a message of at least 10 characters.</p>
+      </div>
+      <button type="submit">Send inquiry</button>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h2 style="color:#C7B65E;font-size:20px;">Subscribe to our newsletter</h2>
+        <form class="subscribe-form" novalidate>
+          <label class="sr-only" for="sub-email-about">Email address</label>
+          <input id="sub-email-about" type="email" name="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+          <p class="error subscribe-error">Please enter a valid email address.</p>
+        </form>
+      </div>
+      <div>
+        <h2 style="color:#C7B65E;font-size:20px;">Visit &amp; call</h2>
+        <p>Mon–Fri 9 a.m.–8 p.m.<br>Sat 10 a.m.–6 p.m.<br>Sun 11 a.m.–5 p.m.</p>
+        <p><a href="tel:+15550100">(555) 0100</a></p>
+        <p><a href="https://facebook.com" rel="noopener">Facebook</a> · <a href="https://instagram.com" rel="noopener">Instagram</a> · <a href="https://x.com" rel="noopener">X</a></p>
+      </div>
+      <div>
+        <h2 style="color:#C7B65E;font-size:20px;">Explore</h2>
+        <p><a href="index.html">Home</a><br><a href="gallery.html">Gallery</a><br><a href="about.html">About Us</a><br><a href="community.html">Community</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

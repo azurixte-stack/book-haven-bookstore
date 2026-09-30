@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" role="img" aria-label="Book Haven Bookstore">
+  <rect width="280" height="64" fill="#2E4057"/>
+  <g transform="translate(4,0) scale(0.95)">
+    <g fill="none" stroke="#C7B65E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 50 V16 c10 4 12 4 22 0 v34 c-10 4 -12 4 -22 0 z"/>
+      <path d="M32 16 c10 4 12 4 22 0 v34 c-10 4 -12 4 -22 0"/>
+      <path d="M32 18 v32"/>
+      <path d="M32 28 c-2-6 -6-9 -8-10 c3 5 4 9 4 14"/>
+      <path d="M28 32 c-4 0 -6 2 -7 4"/>
+    </g>
+  </g>
+  <text x="78" y="28" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#FFF7EE">BOOK HAVEN</text>
+  <text x="78" y="46" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#C7B65E">BOOKSTORE</text>
+</svg>

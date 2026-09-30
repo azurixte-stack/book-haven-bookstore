@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Book Haven Bookstore</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo-wordmark.svg" alt="Book Haven Bookstore logo">
+      <span class="page-title">Gallery</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="gallery-toolbar">
+      <h1>Shop the collection</h1>
+      <button id="view-cart" class="btn-gold" type="button">View Shopping Cart</button>
+    </div>
+    <div class="gallery-grid">
+      <article class="card product-card">
+        <div class="cover" style="background:#2E4057;" role="img" aria-label="Cover of Brie Mine 4Ever">Brie Mine 4Ever</div>
+        <h2>Brie Mine 4Ever</h2>
+        <p>A book for cheese lovers pairing recipes with a warm story.</p>
+        <p class="price">$16.99</p>
+        <button type="button" data-add="brie">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#3F5461;" role="img" aria-label="Cover of Glory Riders">Glory Riders</div>
+        <h2>Glory Riders</h2>
+        <p>A book about bikers, open roads, and found family.</p>
+        <p class="price">$18.50</p>
+        <button type="button" data-add="glory">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#5C2E5C;" role="img" aria-label="Cover of Sorcerer's Shadowed Chronicles">Sorcerer's Chronicles</div>
+        <h2>Sorcerer's Shadowed Chronicles</h2>
+        <p>A fantasy saga of shadowed courts and stubborn heroes.</p>
+        <p class="price">$21.00</p>
+        <button type="button" data-add="sorcerer">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#EE583F;" role="img" aria-label="Ball magazine cover">Ball</div>
+        <h2>Ball</h2>
+        <p>A magazine about pickleball for weekend competitors.</p>
+        <p class="price">$7.99</p>
+        <button type="button" data-add="ball">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#3E5641;" role="img" aria-label="Travel magazine cover">Travel</div>
+        <h2>Travel</h2>
+        <p>A magazine for travelers mapping the next itinerary.</p>
+        <p class="price">$8.50</p>
+        <button type="button" data-add="travel">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#C7B65E;color:#131C26;" role="img" aria-label="Eat magazine cover">Eat.</div>
+        <h2>Eat.</h2>
+        <p>A magazine for foodies and kitchen experimenters.</p>
+        <p class="price">$8.25</p>
+        <button type="button" data-add="eat">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#131C26;" role="img" aria-label="Canvas tote bag that says ALL I DO IS READ READ READ">READ Tote</div>
+        <h2>ALL I DO IS READ Tote</h2>
+        <p>Canvas tote with black lettering for market days and library runs.</p>
+        <p class="price">$14.00</p>
+        <button type="button" data-add="tote">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#2E4057;" role="img" aria-label="Book Haven Bookstore notebook">Notebook</div>
+        <h2>Book Haven Notebook</h2>
+        <p>A notebook with the shop name on the cover.</p>
+        <p class="price">$9.50</p>
+        <button type="button" data-add="notebook">Add to Cart</button>
+      </article>
+      <article class="card product-card">
+        <div class="cover" style="background:#EE583F;" role="img" aria-label="Set of four Book Haven stickers">Sticker Set</div>
+        <h2>Reading Sticker Set</h2>
+        <p>Four stickers that promote reading and the shop.</p>
+        <p class="price">$5.00</p>
+        <button type="button" data-add="stickers">Add to Cart</button>
+      </article>
+    </div>
+  </main>
+  <div id="cart-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cart-heading" aria-hidden="true">
+    <div class="modal-panel">
+      <h2 id="cart-heading">Your shopping cart</h2>
+      <div id="cart-items"></div>
+      <p><strong>Total: <span id="cart-total">$0.00</span></strong></p>
+      <p>
+        <button id="clear-cart" type="button" class="btn-ink">Clear Cart</button>
+        <button id="process-order" type="button">Process Order</button>
+        <button id="close-cart" type="button" class="btn-gold">Close</button>
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h2 style="color:#C7B65E;font-size:20px;">Subscribe to our newsletter</h2>
+        <form class="subscribe-form" novalidate>
+          <label class="sr-only" for="sub-email-gal">Email address</label>
+          <input id="sub-email-gal" type="email" name="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+          <p class="error subscribe-error">Please enter a valid email address.</p>
+        </form>
+      </div>
+      <div>
+        <h2 style="color:#C7B65E;font-size:20px;">Visit &amp; call</h2>
+        <p>Mon–Fri 9 a.m.–8 p.m.<br>Sat 10 a.m.–6 p.m.<br>Sun 11 a.m.–5 p.m.</p>
+        <p><a href="tel:+15550100">(555) 0100</a></p>
+        <p><a href="https://facebook.com" rel="noopener">Facebook</a> · <a href="https://instagram.com" rel="noopener">Instagram</a> · <a href="https://x.com" rel="noopener">X</a></p>
+      </div>
+      <div>
+        <h2 style="color:#C7B65E;font-size:20px;">Explore</h2>
+        <p><a href="index.html">Home</a><br><a href="gallery.html">Gallery</a><br><a href="about.html">About Us</a><br><a href="community.html">Community</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

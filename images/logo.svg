@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="Book Haven Bookstore logo">
+  <rect width="240" height="80" fill="#FFF7EE"/>
+  <rect x="8" y="16" width="48" height="48" rx="4" fill="#2E4057"/>
+  <path d="M16 24h32v32H16z" fill="#FFF7EE"/>
+  <path d="M32 24v32" stroke="#C7B65E" stroke-width="3"/>
+  <text x="68" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E4057">BOOK HAVEN</text>
+  <text x="68" y="58" font-family="Arial, sans-serif" font-size="12" fill="#EE583F">BOOKSTORE</text>
+</svg>
